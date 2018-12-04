@@ -1,1 +1,633 @@
-/* Should be empty until you compile your LESS */
+/*------------------------------------*\
+RESET
+\*------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0b1 | 201101 
+NOTE:WORK IN PROGRESS
+USE WITH CAUTION AND TEST WITH ABANDON */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: ’’;
+  content: none;
+}
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Your Code Goes Here */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: Roboto, Arial, sans-serif;
+}
+.container {
+  max-width: 1040px;
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* h2:hover {
+    background-color: #619fb8;
+  }
+  */
+.nav {
+  max-width: 1000rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.nav header {
+  background-color: #969ea8;
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 110px;
+}
+.nav header h1 {
+  font-weight: bold;
+  font-size: 24px;
+  Color: #FFFFFF;
+  margin-left: 9rem;
+}
+a {
+  display: none;
+}
+.hamburger {
+  margin-right: 9rem;
+}
+.jumbotron {
+  position: relative;
+}
+.jumbotron .jumbo-image {
+  width: 100%;
+}
+.jumbotron h1 {
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 75px;
+  color: #FFFFFF;
+  padding: 0 110px;
+  position: absolute;
+  bottom: 3rem;
+}
+.myHeader {
+  background-color: #969ea8;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.myHeader h1 {
+  font-weight: Bold;
+  font-size: 24px;
+  color: #FFFFFF;
+  margin-left: 10em;
+}
+.myHeader img {
+  margin-right: 30em;
+  cursor: pointer;
+}
+.jumbo-image {
+  width: 100%;
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.jumbo .small-img {
+  display: none;
+}
+.jumbo h1 {
+  position: relative;
+  bottom: 300px;
+  left: 200px;
+  font-size: 6rem;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 60px;
+}
+.services {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.services .architects {
+  margin-top: 70px;
+  padding-left: 30px;
+}
+.services .architects img {
+  display: none;
+}
+.services .architects .title {
+  margin-top: 30px;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.services .architects .text {
+  width: 400px;
+  padding-top: 15px;
+  line-height: 20px;
+  font-size: 1.5rem;
+  padding-bottom: 15px;
+}
+.services .architects button {
+  padding: 10px 20px 10px 20px;
+  border: 1px solid #222222;
+}
+.home1 {
+  margin-left: 40px;
+  margin-top: 40px;
+}
+.services2 {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.services2 .design {
+  margin-top: 65px;
+}
+.services2 .design img {
+  display: none;
+}
+.services2 .design .heading {
+  margin-top: 20px;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.services2 .design .para {
+  width: 400px;
+  padding-top: 10px;
+  line-height: 20px;
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+}
+.services2 .design button {
+  padding: 10px 20px 10px 20px;
+  border: 1px solid #222222;
+}
+.home2 {
+  margin-top: 60px;
+  padding-right: 160px;
+}
+.projects .head-3 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 85px;
+  padding-bottom: 40px;
+}
+.projects .project .small-img {
+  display: none;
+}
+.projects .right {
+  float: right;
+  background-color: #D8D8D8;
+  padding: 30px 60px 30px 60px;
+  font-size: 4rem;
+  position: relative;
+  bottom: 40px;
+  right: 144px;
+}
+.projects .left {
+  float: left;
+  background-color: #D8D8D8;
+  padding: 30px 60px 30px 60px;
+  font-size: 4rem;
+  position: relative;
+  bottom: 40px;
+  left: 0;
+}
+.projects .info {
+  margin-top: 100px;
+  margin-left: 300px;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  padding-bottom: 40px;
+  font-weight: bold;
+}
+.design {
+  padding-right: 30px;
+}
+@media (max-width: 500px) {
+  .nav img {
+    margin: 0;
+  }
+  .nav header h1 {
+    margin: 0;
+  }
+  .jumbo-image {
+    display: none;
+  }
+  .jumbo .small-img {
+    display: block;
+    width: 500px;
+    height: 50vh;
+  }
+  .jumbo h1 {
+    position: relative;
+    bottom: 300px;
+    left: 20px;
+    font-size: 6rem;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 70px;
+  }
+  .container {
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+  }
+  .container .services {
+    text-align: center;
+  }
+  .container .architects {
+    width: 400px;
+    margin: 0;
+    padding: 0;
+  }
+  .container .architects .small-img {
+    display: block;
+    width: 400px;
+    height: 35vh;
+    margin: 0;
+    padding: 0;
+  }
+  .container .architects .title {
+    margin-top: 30px;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  .container .architects .text {
+    width: 400px;
+    padding-top: 15px;
+    line-height: 20px;
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+  }
+  .container .architects button {
+    padding: 10px 100px 10px 100px;
+    border: 2px solid #222222;
+  }
+  .container .home1 {
+    display: none;
+  }
+  .container .home2 {
+    display: none;
+  }
+  .container .services2 {
+    text-align: center;
+  }
+  .container .services2 .para {
+    width: 400px;
+    padding-top: 15px;
+    line-height: 20px;
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+  }
+  .container .services2 .design {
+    padding: 0;
+    margin-top: 30px;
+  }
+  .container .services2 .design .small-img {
+    display: block;
+    width: 400px;
+    height: 35vh;
+    margin: 0;
+    padding: 0;
+  }
+  .container .services2 button {
+    padding: 10px 100px 10px 100px;
+    border: 2px solid #222222;
+  }
+  .container .projects .head-3 {
+    padding-left: 10px;
+  }
+  .container .projects .project .pimage {
+    display: none;
+  }
+  .container .projects .project .small-img {
+    display: block;
+    width: 400px;
+    height: 25vh;
+    margin: auto;
+    padding: 0;
+  }
+  .container .projects .project .right {
+    float: right;
+    background-color: #D8D8D8;
+    padding: 30px 60px 30px 60px;
+    font-size: 3rem;
+    position: relative;
+    bottom: 40px;
+    right: 2em;
+  }
+  .container .projects .project .info {
+    margin-left: 40px;
+    padding-bottom: 30px;
+  }
+  .container .projects .project .left {
+    float: left;
+    background-color: #D8D8D8;
+    padding: 30px 60px 30px 60px;
+    font-size: 3rem;
+    position: relative;
+    bottom: 40px;
+    left: 2em;
+  }
+  footer {
+    background-color: #828282;
+    width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 70px;
+  }
+  footer .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  footer h6 {
+    padding-left: 20px;
+  }
+  footer .input {
+    width: 350px;
+    margin-left: 20px;
+  }
+  footer p {
+    padding-left: 20px;
+  }
+  footer .bold {
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  footer .business {
+    text-align: left !important;
+  }
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #969ea8;
+  opacity: 0.9;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.overlay img {
+  cursor: pointer;
+}
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  line-height: 6rem;
+  color: #ffffff;
+  font-weight: bold;
+  display: block;
+  transition: 0.3s;
+}
+.overlay a:hover,
+.overlay a:focus {
+  color: black;
+}
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+.overlay .openbtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+footer {
+  background-color: #828282;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+footer .footer {
+  max-width: 855px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  font-size: 2rem;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+footer .footer h6 {
+  font-weight: bold;
+}
+footer .footer p {
+  font-size: 1.4rem;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+footer .business {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 40px;
+  color: #FFFFFF;
+  padding-bottom: 8px;
+}
+.bold {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 1.6rem;
+  border-radius: 5px;
+}
+.h1 .image {
+  width: 100%;
+  height: 30vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.h1 .serv {
+  position: relative;
+  bottom: 100px;
+  left: 180px;
+  font-size: 5rem;
+  color: white;
+  font-weight: bold;
+}
+.container .extra {
+  width: 100%;
+  font-size: 17px;
+  line-height: 25px;
+  padding-bottom: 40px;
+}
+.container .extra .tab-content {
+  display: none;
+}
+.tab-items {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-evenly;
+}
+.tab-items .selected {
+  background: #529DB9;
+  color: white;
+}
+.tab-items .item {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 20px;
+  border: 1px solid black;
+  font-weight: bold;
+  font-size: 26px;
+}
+.tab-info .info {
+  display: none;
+}
+.tab-info .choose-tab {
+  display: flex;
+  width: 92%;
+  margin: 0 auto 60px;
+}
+.tab-info .choose-tab .about {
+  margin-right: 5%;
+}
+.tab-info .choose-tab .about h1 {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.tab-info .choose-tab .about p {
+  line-height: 26px;
+}
